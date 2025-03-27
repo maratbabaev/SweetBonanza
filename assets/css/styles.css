@@ -290,6 +290,11 @@ header .container {
   vertical-align: top;
 }
 
+.table--style tr:first-child td {
+  border-color: #0047db;
+  color: #fff;
+}
+
 .mech {
   display: grid;
   align-items: center;
