@@ -29,40 +29,44 @@ faqItem.forEach((item) => {
 	});
 });
 
-const demoBtn = document.querySelector(".demo-btn");
+if (document.querySelector(".demo-btn")) {
+	const demoBtn = document.querySelector(".demo-btn");
 
-demoBtn.addEventListener("click", function () {
-	if (document.querySelector(".slot--wrap")) return;
+	demoBtn.addEventListener("click", function () {
+		if (document.querySelector(".slot--wrap")) return;
 
-	document.body.classList.add("hidden");
-	const slotWrap = document.createElement("div");
-	slotWrap.classList.add("slot--wrap");
+		document.body.classList.add("hidden");
+		const slotWrap = document.createElement("div");
+		slotWrap.classList.add("slot--wrap");
 
-	slotWrap.innerHTML = `
-				<div class="slot">
-						<div class="slot__close" id="close-btn">
-								<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--white-color)">
-										<path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
-								</svg>
-						</div>
-						<div class="slot__body">
-								<iframe class="slot__body__iframe" 
-										src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=ES&cur=EUR" 
-										width="100%" height="100%" 
-										allow="autoplay; fullscreen; encrypted-media" 
-										allowfullscreen>
-								</iframe>
-						</div>
-				</div>
-		`;
+		slotWrap.innerHTML = `
+					<div class="slot">
+							<div class="slot__close" id="close-btn">
+									<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--white-color)">
+											<path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+									</svg>
+							</div>
+							<div class="slot__body">
+									<iframe class="slot__body__iframe" 
+											src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=ES&cur=EUR" 
+											width="100%" height="100%" 
+											allow="autoplay; fullscreen; encrypted-media" 
+											allowfullscreen>
+									</iframe>
+							</div>
+					</div>
+			`;
 
-	document.body.appendChild(slotWrap);
+		document.body.appendChild(slotWrap);
 
-	document.querySelector(".slot__close").addEventListener("click", function () {
-		slotWrap.remove();
-		document.body.classList.remove("hidden");
+		document
+			.querySelector(".slot__close")
+			.addEventListener("click", function () {
+				slotWrap.remove();
+				document.body.classList.remove("hidden");
+			});
 	});
-});
+}
 
 const burger = document.querySelector(".burger");
 const navClose = document.querySelector(".nav__close");
