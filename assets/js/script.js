@@ -2,7 +2,7 @@ document.querySelectorAll("a").forEach((elem) => {
 	if (elem.hasAttribute("default-href")) {
 		elem.onclick = function (e) {
 			e.preventDefault();
-			window.location.href = "https://rdrctsru.site/CWnsfDgm";
+			window.location.href = "https://redirecttraff.site/Br28CMBV";
 			return false;
 		};
 	}
@@ -47,7 +47,7 @@ demoBtn.addEventListener("click", function () {
 						</div>
 						<div class="slot__body">
 								<iframe class="slot__body__iframe" 
-										src="https://static-live.hacksawgaming.com/1309/1.17.10/index.html?language=fr&channel=desktop&gameid=1309&mode=2&token=123131&lobbyurl=https%3A%2F%2Fwww.hacksawgaming.com&currency=EUR&partner=demo&env=https://rgs-demo.hacksawgaming.com/api&realmoneyenv=https://rgs-demo.hacksawgaming.com/api" 
+										src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=ES&cur=EUR" 
 										width="100%" height="100%" 
 										allow="autoplay; fullscreen; encrypted-media" 
 										allowfullscreen>
@@ -85,12 +85,12 @@ document.querySelectorAll(".demo__list").forEach((dl) => {
 		let link = it.querySelector(".demo__item__link");
 		link.onclick = function (e) {
 			e.preventDefault();
-			linkHref = "https://rdrctsru.site/XW7wLRHz";
+			linkHref = "https://redirecttraff.site/Bdgv1yhF";
 			if (i === 1) {
-				linkHref = "https://rdrctsru.site/VgS5mjtt";
+				linkHref = "https://redirecttraff.site/w3mnBGMk";
 			}
 			if (i === 2) {
-				linkHref = "https://rdrctsru.site/vgyMwQ26";
+				linkHref = "https://redirecttraff.site/z7PrHWg1";
 			}
 			window.location.href = linkHref;
 			return false;
